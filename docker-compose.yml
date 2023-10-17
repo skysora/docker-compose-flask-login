@@ -1,0 +1,33 @@
+version: '3.0'
+services:
+  # db:
+  #     image: mariadb:10
+  #     container_name: 'db'
+  #     environment:
+  #       - MYSQL_ROOT_PASSWORD=admin
+  #       - MYSQL_USER="root"
+  #       - MYSQL_DATABASE:NTUST_voice_to_text
+  #       - MYSQL_PASSWORD=admin
+  #     ports:
+  #       - "5500:3306"
+  #     volumes:
+  #       - ./sql:/docker-entrypoint-initdb.d
+  #       - ./sql:/var/lib/mysql
+  #     networks:
+  #       - my-network
+  #     restart: always
+  app:
+      build: ./web
+      container_name: 'web' 
+      # depends_on:
+      #       - db
+      ports:
+        - 8888:80
+      volumes:
+        - ./web:/web
+      networks:
+        - my-network
+      restart: always
+networks:
+  my-network:
+    driver: bridge

@@ -1,0 +1,12 @@
+flask
+gunicorn
+gevent
+azure-storage-blob
+azure-identity
+hume
+pytz
+flask_sqlalchemy
+flask-wtf
+wtforms
+email_validator
+flask-bcrypt
