@@ -5,8 +5,7 @@
 
 ## 結果圖
 
-
-![Image 1](1.png) ![Image 2](2.png) ![Image 3](3.png)
+好讀網頁版：[https://skysora.github.io/](https://skysora.github.io/post/7/)
 
 ## 前置作業
 
