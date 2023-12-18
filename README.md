@@ -18,6 +18,8 @@
 
     git clone https://github.com/skysora/docker-compose-flask-login
     cd docker-compose-flask-login
+    git clone https://github.com/maxcountryman/flask-login.git
+    mv flask-login ./package
     docker-compose up
 -
 ```
